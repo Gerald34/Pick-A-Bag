@@ -5,9 +5,7 @@ import {LocalStorageService} from 'angular-web-storage';
 import {Router} from '@angular/router';
 
 export interface DialogData {
-  moneyBagResults: {
-    money: number
-  };
+  moneyBagResults: any;
   userName: string;
 }
 
