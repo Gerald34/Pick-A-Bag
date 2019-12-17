@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Hi {{ data.userName }}</h1>
+<p>You can only reveal one bag, either continue with your choice or take the risk with the randomly selected bag.</p>
+<div mat-dialog-content>
+  <div class="row">
+
+    <div #userBagID class="col-lg-6" [id]="userSelected.bag_id">
+      <h2>Your Bag</h2>
+      <div class="your-bag-number">
+        {{ userSelected.bag_number }}
+      </div>
+      <mat-card class="money-bag-card">
+        <img mat-card-image [src]="userSelected.bag" alt="money bag">
+        <mat-card-actions>
+          <button mat-dialog-close="" (click)="revealBagValue(userBagID.id)" class="primary-button" mat-button><i class="fas fa-briefcase"></i> Pick Your bag</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="choose">
+      <i class="fas fa-exchange-alt"></i>
+    </div>
+
+    <div #machineID class="col-lg-6" [id]="machineSelection.bag_id">
+      <h2>Random Bag</h2>
+      <div class="bag-number">
+        {{ machineSelection.bag_number }}
+      </div>
+      <mat-card class="money-bag-card">
+        <img mat-card-image [src]="machineSelection.bag" alt="money bag">
+        <mat-card-actions>
+          <button mat-dialog-close="" (click)="revealBagValue(machineID.id)" class="primary-button" mat-button><i class="fas fa-briefcase"></i> Pick The Risk bag</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+  </div>
+
+</div>

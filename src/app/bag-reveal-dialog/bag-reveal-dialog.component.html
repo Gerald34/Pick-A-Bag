@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Congratulations {{data.userName}}</h1>
+<div mat-dialog-content>
+  <div class="results">
+    <p>You have won</p>
+    <h2>{{ data.moneyBagResults.money | currency:'ZAR':"symbol-narrow" }}</h2>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="" (click)="playAgain()">Pick Again?</button>
+  <button mat-button [mat-dialog-close]="" (click)="onNoClick()">No Thanks</button>
+</div>

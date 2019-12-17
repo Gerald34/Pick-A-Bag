@@ -1,0 +1,37 @@
+<app-header></app-header>
+<section class="blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <h1>Hi {{ userInformation.name }}, Pick a bag and win <i class="fas fa-dice"></i></h1>
+        <h4>Bags range from R 500 - R 250 000</h4>
+      </div>
+
+      <div class="col-lg-2">
+        <button class="shuffleButton" mat-button (click)="shuffleSet()">Shuffle Bags <i class="fas fa-random"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="money-bags">
+  <div class="container">
+    <div class="row">
+      <div #bagID [id]="bag.bag_id" class="col-lg-2" *ngFor="let bag of bags">
+
+        <div class="bag-number">
+          {{ bag.bag_number }}
+        </div>
+
+        <mat-card class="money-bag-card">
+          <img mat-card-image [src]="bag.bag" alt="money bag">
+          <mat-card-actions>
+            <button (click)="pickThisBag(bagID)" class="primary-button" mat-button><i class="fas fa-briefcase"></i> Pick bag</button>
+          </mat-card-actions>
+        </mat-card>
+
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,76 @@
+.money-bag-card {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.bag-number {
+  position: absolute;
+  background: #f78b1d;
+  color: #fff;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  left: 25px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+  top: 35px;
+  z-index: 10;
+  padding-top: 18px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid #f9f9f9;
+}
+
+.your-bag-number {
+  position: absolute;
+  background: #3979C3;
+  color: #fff;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  left: 25px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+  top: 35px;
+  z-index: 10;
+  padding-top: 18px;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid #f9f9f9;
+}
+
+.primary-button:hover {
+  color: #3979C3;
+  background: #fff;
+}
+
+.primary-button {
+  width: 100%;
+  color: #f7f7f7;
+  background: #3979C3;
+  padding: 10px 35px;
+  border-radius: 0;
+
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.choose {
+  position: absolute;
+  left: 795px;
+  top: 500px;
+  padding: 14px 30px;
+  background: red;
+  color: #fff;
+  z-index: 10;
+  border-radius: 10%;
+}

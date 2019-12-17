@@ -1,0 +1,106 @@
+.registration {
+  z-index: 1020;
+  width: 30%;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  padding: 280px 40px 0 40px;
+  height: 100vh;
+  background: #fff;
+}
+
+.registration p {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.registration h2 {
+  opacity: 0.7;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.registration h5 {
+  opacity: 0.4;
+  font-size: 12px;
+  margin: 25px 0 15px;
+}
+
+.my-icon {
+  width: 190px;
+  margin: 0 0 15px;
+  display: block;
+  z-index: 10;
+}
+
+.background {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background: url("../../assets/images/cards.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 5;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+label {
+  color: #3979C3;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: .975rem .95rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #888;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.register-button {
+  width: 100%;
+  background: #3979C3;
+  float: right;
+  color: #f8f8f8;
+  padding: 10px 35px;
+  border-radius: 0;
+
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.register-button:hover {
+  -webkit-box-shadow: 0 7px 9px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 7px 9px 0 rgba(0,0,0,0.3);
+}

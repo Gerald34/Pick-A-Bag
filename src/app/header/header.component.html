@@ -1,0 +1,10 @@
+<div *ngIf="authorized; else notAuthorized">
+  <header class="header">
+    <object class="my-icon" data="../assets/images/lottostar_vector.svg" type="image/svg+xml">
+      Lotto Star Logo
+    </object>
+  </header>
+</div>
+
+<ng-template #notAuthorized></ng-template>
+

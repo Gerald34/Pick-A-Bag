@@ -1,0 +1,14 @@
+<br><br><br>
+
+<h1 mat-dialog-title>Hi {{ user.name }}</h1>
+<div mat-dialog-content>
+  <div class="row">
+
+    <app-random-bag [randomSelectedBag]="randomSelectedBag"></app-random-bag>
+    <app-user-bag [selectedBag]="selectedBag"></app-user-bag>
+
+  </div>
+
+</div>
+
+{{ allBags | json }}

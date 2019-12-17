@@ -1,0 +1,12 @@
+<div #machineID class="col-lg-6" [id]="randomSelectedBag.bag_id">
+  <h2>Machine Bag</h2>
+  <div class="bag-number">
+    {{ randomSelectedBag.bag_number }}
+  </div>
+  <mat-card class="money-bag-card">
+    <img mat-card-image [src]="randomSelectedBag.bag" alt="money bag">
+    <mat-card-actions>
+      <button mat-dialog-close="" (click)="revealBagValue(machineID.id)" class="primary-button" mat-button><i class="fas fa-briefcase"></i> Open bag</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

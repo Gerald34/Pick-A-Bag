@@ -1,0 +1,104 @@
+.money-bag-card {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.money-bag-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.blue {
+  /*background: rgba(9, 163, 245, 1);*/
+  background: #3979C3;
+  top: 53px;
+  position: fixed;
+  padding: 20px 0 15px;
+  margin-bottom: 25px;
+  width: 100%;
+  z-index: 10;
+}
+
+.blue h1 {
+  text-align: left;
+  color: #f7f7f7;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blue h4 {
+  text-align: left;
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.money-bags {
+  margin-top: 145px;
+  padding: 20px 0 15px;
+  margin-bottom: 25px;
+}
+
+.primary-button {
+  width: 100%;
+  color: #f7f7f7;
+  background: #3979C3;
+  padding: 10px 35px;
+  border-radius: 0;
+
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.primary-button:hover {
+  color: #3979C3;
+  background: #fff;
+}
+
+.shuffleButton {
+  width: 100%;
+  color: #f7f7f7;
+  background: rgb(247, 139, 29);
+  padding: 10px 35px;
+  border-radius: 0;
+
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.shuffleButton:hover {
+  background: #f7f7f7;
+  color: rgb(247, 139, 29);
+}
+
+.bag-number {
+  position: absolute;
+  background: rgb(247, 139, 29);
+  color: #fff;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  left: 25px;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
+  top: 10px;
+  z-index: 5;
+  padding-top: 5px;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 1px solid #f9f9f9;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 90%;
+  }
+}

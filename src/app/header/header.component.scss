@@ -1,0 +1,16 @@
+.header {
+  background: #333333;
+  width: 100%;
+  padding: 10px 0;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+.my-icon {
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+}
